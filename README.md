@@ -161,7 +161,7 @@ We need to install dotnet (. NET) firstly (. NET is a free, cross-platform, open
 In addition, it has to been the version of 3.1 because running ApsimX will require that you have the .net runtime (3.1) installed on your system.
 
 ```
-conda install -c conda-forge dotnet==3.1
+conda install -c conda-forge dotnet=3.1
 conda install -c anaconda git
 git clone https://github.com/APSIMInitiative/ApsimX
 ```
