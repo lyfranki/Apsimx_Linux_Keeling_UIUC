@@ -100,7 +100,11 @@ checking proj_api.h presence... no
 ```
 Doing the following in R lead you to build 'sf','rgdal'... successfully (**ly-envi** is our personal envi):
 ```
+
+
 print(Sys.setenv(PKG_CONFIG_PATH = "/data/keeling/a/yinl3/miniconda3/envs/ly-envi/lib/pkgconfig/"))
+
+
 
 install.packages("rgdal", repos = "http://R-Forge.R-project.org")
 install.packages("sp", repos = "http://R-Forge.R-project.org")
@@ -114,6 +118,10 @@ When you install 'sf', you may get the following error due to without 'units' pa
 conda install -c conda-forge proj4
 conda install -c conda-forge r-units    !!!!libudunits2-dev
 conda install -c conda-forge libgdal
+conda install -c conda-forge r-soildb
+conda install -c conda-forge r-spdata
+
+conda install -c conda-forge r-lubridate
 
 install.packages("proj4", repos = "http://R-Forge.R-project.org")
 
@@ -150,6 +158,7 @@ install.packages("data.table")
 
 
 install.packages("apsimx")
+conda install -c conda-forge r-rsqlite
 ```
 
 ---
