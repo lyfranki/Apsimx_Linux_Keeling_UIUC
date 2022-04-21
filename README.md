@@ -106,6 +106,7 @@ install.packages("rgdal", repos = "http://R-Forge.R-project.org")
 install.packages("sp", repos = "http://R-Forge.R-project.org")
 install.packages("sf", repos = "http://R-Forge.R-project.org")
 install.packages("soilDB", repos = "http://R-Forge.R-project.org")
+install.packages('soilDB', dependencies = TRUE) why why dependencies???
 
 ```
 When you install 'sf', you may get the following error due to without 'units' package. You should more use **conda** to install R packages rather than **install.packages()**. It is likely to cause compiling issues if using install.packages(). If you cannot find the packages you want in conda R reporitory, then try with install.pacages().
